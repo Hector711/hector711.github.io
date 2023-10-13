@@ -1,0 +1,102 @@
+@import url(./fonts.css);
+
+
+/* ------------- GENERAL -------------------------------------------*/
+* {
+  font-family: "AR One Sans", sans-serif;
+  color: #e8e8eb;
+}
+
+body * {
+  /* HERRAMIENTAS DE VISUALIZACIÓN */
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 1px;
+  margin: 1px;
+  overflow: hidden;
+}
+
+body {
+  font-size: 12px;
+  background-color: #000000;
+}
+/**/
+
+
+
+/* ------------ CABECERA ---------------------------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  height: 7.5rem;
+
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
+.hector {
+  display: flex;
+  justify-content: center;
+
+  font-size: 2rem;
+  width: 18rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+
+/* ------------ NAV RRSS ---------------------------------------------*/
+.nav-rrss {
+  background-color: #191b21;
+  border: 0.5px solid rgba(255, 255, 255, 0.136);
+  border-radius: 6px;
+}
+
+.rrss-title {
+  font-family: Cinzel, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.rrss-box {
+  width: 100%;
+  height: 3rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.rrss-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------ NAV WEB ---------------------------------------------*/
+.nav-web {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.0rem;
+}
+
+.nav-bottom {
+  height: 50%;
+  padding: 0.5%;
+
+  background-color: rgba(22, 21, 21, 0.443);
+  border: 1px solid rgb(175, 174, 174);
+  border-radius: 3px;
+}

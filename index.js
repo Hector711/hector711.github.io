@@ -16,8 +16,3 @@ formulario.addEventListener("submit", function (event) {
       `;
 });
 
-document.getElementById("formulario").addEventListener("submit", function (resultado) {
-  vent.preventDefault();
-  
-  alert (resultado);
-})

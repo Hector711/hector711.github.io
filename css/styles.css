@@ -108,7 +108,7 @@ header {
 
   
   box-sizing: border-box;
-  background: linear-gradient( rgba(218, 211, 211, 0.355),#0f0f0ffd);
+  background: linear-gradient( rgba(37, 32, 32, 0.625),#0f0f0fdc);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 

@@ -3,4 +3,37 @@
     src: url("./Tipografías/CinzelDecorative-Regular.otf");
   }
 
+/* ------------- GENERAL -------------------------------------------*/
+* {
+  font-family: var(--fonts);
+  color: var(--color2-white);
+}
+
+body {
+  font-size: var(--font-standart-size);
+
+}
+
+/* ------------- CABECERA -----------------------------------------------*/
+.hector {
+  font-size: var(--font-h1-size);
+}
+
+/* ------------ NAV RRSS ---------------------------------------------*/
+
+/* ------------ NAV WEB ---------------------------------------------*/
+
+/* ------------ SOBRE MI ---------------------------------------------*/
+
+/* ------------ FORMULARIO ---------------------------------------------*/
+#contacto {
+  font-size: var(--font-text-size);
+  
+}
+input, textarea {
+  color: var(--color1-black);
+
+}
+/* ------------ FOOTER ---------------------------------------------*/
+
 

@@ -1,7 +1,15 @@
-@font-face {
-    font-family: "Cinzel"; /* Nombre de la fuente que usarás en tu CSS */
-    src: url("./Tipografías/CinzelDecorative-Regular.otf");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+  :root {
+    --fonts: "AR One Sans", sans-serif;
+  
+    --font-h1-size: 2rem;
+    --font-h2-size: 1.7rem;
+    --font-h3-size: 1.3;
+    --font-text-size: 1rem;
+    --font-standart-size: 14px;
   }
+
 
 /* ------------- GENERAL -------------------------------------------*/
 * {
@@ -15,8 +23,9 @@ body {
 }
 
 /* ------------- CABECERA -----------------------------------------------*/
-.hector {
-  font-size: var(--font-h1-size);
+#hector-container {
+  font-size: 30px;
+  font-family: 'Cinzel Decorative', serif;
 }
 
 /* ------------ NAV RRSS ---------------------------------------------*/

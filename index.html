@@ -21,30 +21,58 @@
     </div>
 
     <br>
-    
+
   </header>
 
   <br>
-  <!------------- NAV RRSS ----------------------------------------------->
-  <nav class="nav-rrss">
-    <div class="container" id="rrss-box">
+
+
+
+
+  <!------------- RRSS ----------------------------------------------->
+  <nav id="nav-rrss" >
+    <!-- <div id="rrss-box"> -->
       <a class="rrss-links" href="https://www.linkedin.com/in/hector711/" target="_blank" rel="noopener">LINKEDIN</a>
       <a class="rrss-links" href="https://www.instagram.com/hctr.xx/" target="_blank" rel="noopener">INSTAGRAM</a>
       <a class="rrss-links" href="https://github.com/Hector711" target="_blank" rel="noopener">GITHUB</a>
-    </div>
+    <!-- </div> -->
   </nav>
 
   <br>
+
+
+
+
   <!------------- NAV WEB ----------------------------------------------->
-  <nav class="nav-web">
-    <div class="nav-bottom"><a href="#sobre-mi">SOBRE MÍ</a></div>
-    <div class="nav-bottom"><a href="#proyectos">PROYECTOS</a></div>
-    <div class="nav-bottom"><a href="#contacto">CONTACTO</a></div>
+  <nav id="nav-web">
+    <a class="nav-bottom" href="">MI HISTORIA</a>
+    <a class="nav-bottom" href="">PROYECTOS</a>
+    <a class="nav-bottom" href="">TRAYECTORIA</a>
+    <a class="nav-bottom" href="">CONTACTO</a>
   </nav>
-  <!------------- MI HISTORIA MI----------------------------------------------->
-  <section id="sobre-mi" class="">
+  <br>
+
+
+
+
+  <!------------- NEWSLETTER ----------------------------------------------->
+  <section id="newsletter-section" class="main">
+    <div class="container" >
+      <h2 id="newsletter-tittle">Únete a la comunidad</h2>
+      <form id="neswletter">
+        <label for="email">Newsletter con contenido exclusivo</label>
+        <input type="email" id="email" name="email" required value="Correo electrónico">
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <!------------- MI HISTORIA ----------------------------------------------->
+  <section id="historia-section" class="main inactive">
     <div class="container">
-      <h2>Mi Historia</h2>
+      <h3>Mi Historia</h3>
       Nací en el 97, en Madrid, y fui criado en una familia hispano-peruana, en el barrio de Puente de Vallecas, junto
       con un hermano y dos hermanastros. Aunque siempre nos hemos tratado como hermanos, para mi no había distinción.
 
@@ -147,10 +175,52 @@
   </section>
 
   <br>
-  <!------------- PROYECTOS ----------------------------------------------->
-  <section id="proyectos" class="inactive">
+
+  <!------------- TRAYECTORIA ----------------------------------------------->
+
+
+  <!------------- TRYECTORIA ----------------------------------------------->
+  <section id="trayectoria-section" class="trayectoria main inactive">
     <div class="container">
-      <h2>Trayectoria Profesional</h2>
+      <h3>Trayectoria Profesional</h3>
+      <dl>
+        <dt>Auxiliar de tienda en Tako Away</dt>
+        <dd>11/2016 - 10/2017</dd>
+        <dd>Calle de Fuencarral 87, Madrid (Metro Tribunal).</dd>
+
+        <dt>Técnico de sonido en Escuela Musica Creativa</dt>
+        <dd>05/2021 - 10/2021</dd>
+        <dd>Calle de La Palma 35, Madrid (Metro Tribunal).</dd>
+
+        <dt>Comercial de ventas en We Are Sales</dt>
+        <dd>08/2021 - 09/2021</dd>
+        <dd>Calle de San Romualdo 26, Madrid (Metro Suanzes).</dd>
+
+        <dt>Camarero en Restaurante ROKOTO</dt>
+        <dd>11/2021 - 2/2022</dd>
+        <dd>Calle de Lopez Silva 4, Madrid (Metro La Latina).</dd>
+
+        <dt>Camarero en Restaurante TOTÓ</dt>
+        <dd>2/2022 - 03/2022</dd>
+        <dd>Paseo de la Castellana 38, Madrid (Metro Rubén Darío)</dd>
+
+        <dt>Camarero en Restaurante A’BARRA (1*Michelín)</dt>
+        <dd>03/2022 - 07/2022</dd>
+        <dd>Paseo del Pinar 15, MAdrid (Metro Gregorio Marañón)</dd>
+
+        <dt>Coctelero en Harvey’s en Cocktail Bar</dt>
+        <dd>07/2022 - 06/2023</dd>
+        <dd>Calle Fuencarral 70, Madrid (Metro Tribunal).</dd>
+
+      </dl>
+    </div>
+  </section>
+
+  <br>
+  <!------------- PROYECTOS ----------------------------------------------->
+  <section id="proyectos" class="main inactive" >
+    <div class="container">
+      <h3>Trayectoria Profesional</h3>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quidem alias fugit harum odio ea consequatur
       quaerat eligendi similique! Laudantium sunt unde veritatis earum amet consequatur nisi fugit ipsa nostrum! Lorem
       ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quidem alias fugit harum odio ea consequatur quaerat
@@ -159,9 +229,11 @@
 
   <br>
 
+
+
   <!------------- CONTACTO ----------------------------------------------->
-  <section id="contacto" class="inactive">
-    <h2>Contacto</h2>
+  <section id="contacto"  class="main ">
+    <h3>Contacto</h3>
     <form id="formulario">
       <table>
         <tr>
@@ -187,9 +259,12 @@
 
   <br>
 
+
+
+
   <!-------------- FOOTER ----------------------------------------------->
   <footer>
-    <div class="container-extras">
+    <div class="container">
       <p>&copy; 2023 Héctor Guerra.</p>
     </div>
   </footer>

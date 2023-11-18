@@ -2,6 +2,10 @@
 
 /* ---------- CINZEL DECORATIVE ------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@font-face {
+  font-family: 'Bajs' ;
+  src: url(../Tipografías/Bajsmaskin.ttf);
+}
 
 :root {
   --font-h1-fam: "Cinzel Decorative";
@@ -10,6 +14,7 @@
   --font-h1-size: 2rem;
   --font-h2-size: 1.7rem;
   --font-h3-size: 1.3rem;
+  --font-h4-size: 1.3rem;
   --font-text-size: 1rem;
   --font-standart-size: 14px;
 
@@ -35,11 +40,13 @@
 
 }
 
+ul {
+  padding: 0.4rem;
+  margin: 0;
+}
 
 body {
   font-size: var(--font-standart-size);
-
-
 
   /* ---------------------- */
 
@@ -53,9 +60,29 @@ body {
 
 h2{
   font-size: var(--font-h1-size);
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+  text-shadow: 1px 2px 8px rgba(255, 255, 255, 0.663);
 }
+
 h3 {
   font-size: var(--font-h3-size);
+  letter-spacing: 1px;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+
+  font-size: var(--font-h4-size);
+  font-weight: normal;
+  letter-spacing: 0;
+
+  color: rgb(74, 76, 74);
+
+  margin-top: 1rem;
+  /* font-family: 'Bajs'; */
 }
 
 section {
@@ -66,7 +93,6 @@ section {
   background-color: rgba(191, 191, 224, 0.228);
   backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-
   box-shadow: 0px 0px 10px 1px var(--color-SEC-soft);
 
 }
@@ -81,6 +107,8 @@ section {
 #hector-container {
   font-size: 30px;
   font-family: 'Cinzel Decorative', serif;
+  text-shadow: 1px 1px 10px rgba(178, 184, 208, 0.663);
+
 
   /* ---------------------- */
 
@@ -162,10 +190,10 @@ header {
   /* ---------------------- */
 
   /* background-color: rgba(0, 0, 0, 0.228); */
-  /* background-color: rgba(1, 41, 3, 0.091); */
-  backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-  box-shadow: 0px 0px 10px 1px var(--color-SEC-soft);
+  background-color: rgba(13, 13, 13, 0.293);
+  backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 10px 1px;
 
 }
 

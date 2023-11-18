@@ -27,7 +27,10 @@ body {
 }
 
 .inactive {
-  display: none;
+  /* display: none; */
+}
+.container {
+  padding: 0.5rem;
 }
 
 
@@ -142,6 +145,18 @@ header {
   
 }
 
+
+/* ------------- NEO  ---------------------------------------------*/
+#neo-section *{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* border: 1px solid white; */
+  /* font-family: 'Bajs'; */
+  /* border: 1px solid white; */
+}
 
 
 

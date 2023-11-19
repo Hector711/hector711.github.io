@@ -3,8 +3,11 @@
 
 
 :root {
-  --lateral-margins: 7dvw;
-  --lateral-menu: 25dvw;
+  --lateral-margins: 12dvw;
+  --w-main-menu: 22dvw;
+  --max-w-main-menu: 270px;
+  --w-lateral-menu: 12dvw;
+  --header-height: 6rem;
 }
 
 
@@ -25,9 +28,9 @@ body * {
 body {
   height: auto;
   width: 98vw;
-  margin: 0;
-  padding: 0;
-  margin-top: 7rem;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  margin-top: var(--header-height);
   box-sizing: border-box;
 
   position:relative;
@@ -88,7 +91,7 @@ header {
   justify-content: flex-start;
   align-items: center;
 
-  height: 7rem;
+  height: var(--header-height);
   width: 100%; 
   left: 0; 
   top: 0;
@@ -108,7 +111,6 @@ header {
   justify-content: center;
 
   width: 80%;
-  /* max-width: 40rem; */
   height: 5rem;
   padding: 0;
   margin: 0;
@@ -119,7 +121,7 @@ header {
 
 h1 {
   margin:0;
-  padding: 0.8rem;
+  padding: 0.8rem 0 0 0;
   width: 100%;
   text-align: center;
 
@@ -140,16 +142,15 @@ h1 {
 
 
 /* ============= RRSS ==========================================*/
-
-
 #nav-rrss {
   display: flex;
   justify-content: space-evenly;
   align-content: space-evenly;
-
+  flex-wrap: wrap;
   padding-top: 1rem;
   
   width:100%;
+  height: 4rem;
  
   box-sizing: border-box;
 }
@@ -161,7 +162,7 @@ h1 {
   /* para eliminar el subrayado predet de los links */
   text-decoration: none;
 
-  height: auto;
+  height: 1rem;
   padding: 0.5rem;
   margin-bottom: 1rem ;
   border-radius: 5px;
@@ -177,30 +178,28 @@ img {
 
 
 
-
 /* ============= NAV WEB ==========================================*/
 #nav-web {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 
-  height: 3rem;
+  height: 5rem;
   margin:0;
 }
-
 
 .nav-bottom {
   display: flex;
   justify-content: center;
 
-
-  height: 50%;
-  width: 6rem;
+  height: 1.5rem;
+  width: auto;
+  min-width: 7rem;
   padding: 0.5%;
-  /* border: 1px solid rgba(15, 174, 174, 0.123); */
+
   border-radius: 3px;
   text-decoration: none;
-
   
 }
 
@@ -365,7 +364,7 @@ footer {
 
   #hector-container { 
     display: flex;
-    width: var(--lateral-menu);
+    width: var(--w-main-menu);
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -386,7 +385,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: var(--lateral-menu);
+    margin-left: var(--w-main-menu);
+    /* margin-right: var(--w-lateral-menu); */
     
     box-sizing: border-box;
 
@@ -403,14 +403,17 @@ footer {
   }
 
 
-  /* ==== NAVEGACION ==== */
+  /* ==== BIG BOX NAVEGACION ==== */
   
   .hr-nav{
     display: unset;
-    width: 80%;
+    width: 90%;
+
+    margin: 0.7rem;
+    padding: 0;
   }
 
-  #nav-big-box {
+  #main-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -420,7 +423,8 @@ footer {
     
 
     height: 60dvh;
-    width: var(--lateral-menu);
+    width: var(--w-main-menu);
+    /* max-width: var(--max-w-main-menu); */
 
     position: fixed;
   }
@@ -435,13 +439,17 @@ footer {
   #nav-rrss {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     align-items: center;
+    gap: 8px;
+
+
 
     margin: 0;
-    padding: 0;
-    height: 10dvh;
+    padding: 0.7rem;
+    height: auto;
+
     width: 90%;
 
 
@@ -464,7 +472,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 40dvh;
-    width: 20dvw;
+    width: 90%;
   }
 
   .nav-bottom {
@@ -474,7 +482,7 @@ footer {
     align-items: center;
   
   
-    height: 50%;
+    height: 15%;
     width:100%;
     padding: 0.5%;
     border-radius: 3px;
@@ -483,22 +491,13 @@ footer {
     
   }
 
-
-
- 
-
-
-
-
-
-
-
 }
 
 
 
+
 /* ===================================== MEDIA QUERIE =======================================================================v */
-@media (min-width: 1110px) {
+@media (min-width: 1136px) {
     
   h1 {
     font-size: 1.8rem;
@@ -512,6 +511,12 @@ footer {
     align-items: center;
 
   }
+
+  #nav-rrss {
+    gap: 14px;
+    margin: 5px;
+
+  }
   
   hr {
     display: unset;
@@ -519,12 +524,15 @@ footer {
   
   .hr-bio {
     height: 1rem;
-    margin: 0.5rem;
+    margin: 0.4rem;
 
   }
 
   .hr-main {
-    margin: 1rem;
+    margin: 1.5rem;
 
   }
+
+
+
 }

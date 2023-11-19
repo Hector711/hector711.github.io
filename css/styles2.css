@@ -3,18 +3,19 @@
 /* ---------- CINZEL DECORATIVE ------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @font-face {
-  font-family: 'Bajs' ;
+  font-family: 'Bajs';
   src: url(../Tipografías/Bajsmaskin.ttf);
 }
+
 
 :root {
   --font-h1-fam: "Cinzel Decorative";
   --font-text-fam: "AR One Sans", sans-serif;
 
-  --font-h1-size: 2rem;
-  --font-h2-size: 1.7rem;
+  --font-h1-size: 1.6rem;
+  --font-h2-size: 2rem;
   --font-h3-size: 1.3rem;
-  --font-h4-size: 1.3rem;
+  --font-h4-size: 1.1rem;
   --font-text-size: 1rem;
   --font-standart-size: 14px;
 
@@ -37,7 +38,6 @@
   color: var(--color-white);
   /* ---------------------- */
 
-
 }
 
 ul {
@@ -57,9 +57,14 @@ body {
   background-attachment: fixed;
 
 }
+h1{
+  font-size: var(--font-h1-size);
+  font-family: 'Cinzel Decorative', serif;
+  text-shadow: 1px 1px 10px rgba(178, 184, 208, 0.663);
+}
 
 h2{
-  font-size: var(--font-h1-size);
+  font-size: var(--font-h2-size);
   letter-spacing: 2px;
   margin-top: 2rem;
   margin-bottom: 0.3rem;
@@ -86,7 +91,7 @@ h4 {
 }
 
 section {
-
+  
   /* ---------------------- */
 
   /* background-color: rgba(0, 0, 0, 0.228); */
@@ -104,18 +109,7 @@ section {
 
 
 /* ------------- HEADER -----------------------------------------------*/
-#hector-container {
-  font-size: 30px;
-  font-family: 'Cinzel Decorative', serif;
-  text-shadow: 1px 1px 10px rgba(178, 184, 208, 0.663);
 
-
-  /* ---------------------- */
-
-
-
-
-}
 
 
 header {
@@ -163,7 +157,8 @@ header {
 
 
 
-  background: radial-gradient(ellipse 8rem 1.5rem, var(--color-black), var(--color-grey));
+
+  background: radial-gradient(ellipse 4rem 4rem, var(--color-white), var(--color-grey));
   box-shadow: 1px 1px 10px 5px var(--color-SEC-soft);
 }
 

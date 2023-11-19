@@ -1,0 +1,164 @@
+@media (min-width: 800px) {
+    
+  body {
+    margin-top: 7rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /* align-items: stretch; */
+    align-items:flex-start;
+    align-content:flex-start;
+
+    margin: 0;
+    height: 7rem;
+    width: 100dvw; 
+    left: 0; 
+    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.9rem;
+    box-sizing: border-box;
+  
+    position:fixed;
+    z-index: 1;
+
+
+    display: flex;
+
+    left: 0; 
+    top: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+    box-sizing: border-box;
+    position:fixed;
+
+  }
+
+  
+
+
+
+  #hector-container { 
+    display: flex;
+    width: 30dvw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+
+
+  }
+
+  
+
+
+
+
+
+  .main {
+    width: 40dvw;
+  }
+  
+  #big-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 20dvw;
+    /* width: 100dvw;
+    height: 100dvh; */
+    box-sizing: border-box;
+
+
+  }
+  
+  #nav-big-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+
+
+    margin: 0;
+    padding: 0;
+    height: 60dvh;
+    width: 30dvw;
+
+    position: fixed;
+  }
+
+  #nav-rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    height: 10dvh;
+    width: 20dvw;
+
+
+  }
+    
+
+  .rrss-links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    
+    margin: 0;
+    height: 1rem;
+    width: 5rem;
+  }
+  
+  #nav-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40dvh;
+    width: 20dvw;
+  }
+
+  .nav-bottom {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  
+  
+    height: 50%;
+    width:100%;
+    padding: 0.5%;
+    border-radius: 3px;
+    text-decoration: none;
+  
+    
+  }
+
+
+
+
+
+
+
+
+
+  #big-box-main {
+    width: 50dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  hr {
+    display: unset;
+    margin: 3rem;
+  }
+  
+}

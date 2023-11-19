@@ -16,55 +16,61 @@
 <body>
 
   <div id="big-box-header">
-  <!------------- HEADER ----------------------------------------------->
-  <header id="header">
-    <div class="container" id="hector-container">Héctor Guerra</div>
+    <!------------- HEADER ----------------------------------------------->
+    <header id="header">
 
-    <!-- <br> -->
-    <nav id="nav-rrss-header">
-      <!-- <div id="rrss-box"> -->
-      <a class="rrss-links" href="https://www.linkedin.com/in/hector711/" target="_blank" rel="noopener">LINKEDIN</a>
-      <a class="rrss-links" href="https://www.instagram.com/hctr.xx/" target="_blank" rel="noopener">INSTAGRAM</a>
-      <a class="rrss-links" href="https://github.com/Hector711" target="_blank" rel="noopener">GITHUB</a>
-      <!-- </div> -->
-    </nav>
+      <div class="container" id="hector-container">
+        <h1>Héctor Guerra</h1>
+      </div>
 
-  </header>
-
-  <br>
-
-
-
-
-  <!------------- RRSS ----------------------------------------------->
-  <nav id="nav-rrss">
-    <!-- <div id="rrss-box"> -->
-    <a class="rrss-links" href="https://www.linkedin.com/in/hector711/" target="_blank" rel="noopener">LINKEDIN</a>
-    <a class="rrss-links" href="https://www.instagram.com/hctr.xx/" target="_blank" rel="noopener">INSTAGRAM</a>
-    <a class="rrss-links" href="https://github.com/Hector711" target="_blank" rel="noopener">GITHUB</a>
-    <!-- </div> -->
-  </nav>
-
-  <br>
+    </header>
   </div>
 
 
+  <nav id="nav-big-box">
+    <!------------- BIO ----------------------------------------------->
+    <div id="bio">
+      <div>Programador</div>
+      <hr class="hr-bio">
+      <div>Artista</div>
+      <hr class="hr-bio"> 
+      <div>Emprendedor</div>
+    </div>
+
+
+    <!------------- RRSS ----------------------------------------------->
+    <nav id="nav-rrss">
+      <a class="rrss-links" href="https://github.com/Hector711" target="_blank" rel="noopener">
+        <img src="./img/github.png" alt="GITHUB profile">
+      </a>
+      <a class="rrss-links" href="https://www.linkedin.com/in/hector711/" target="_blank" rel="noopener">
+        <img src="./img/linkedin.png" alt="LINKEDIN profile">
+      </a>
+      <a class="rrss-links" href="https://www.instagram.com/hctr.xx/" target="_blank" rel="noopener">
+        <img src="./img/insta.png" alt="Instagram">
+      </a>
+      <a class="rrss-links" href="https://www.instagram.com/hctr.xx/" target="_blank" rel="noopener">
+        <img src="./img/cv.png" alt="Curriculum">
+      </a>
+    </nav>
+    <hr class="hr-nav">
+
     <!------------- NAV WEB ----------------------------------------------->
-    
-      <nav id="nav-web">
-        <a class="nav-bottom" href="">MI HISTORIA</a>
-        <a class="nav-bottom" href="">PROYECTOS</a>
-        <a class="nav-bottom" href="">TRAYECTORIA</a>
-        <a class="nav-bottom" href="">CONTACTO</a>
-        <br>
 
-      </nav>
+    <nav id="nav-web">
+      <a class="nav-bottom" href="">MI HISTORIA</a>
+      <a class="nav-bottom" href="">PROYECTOS</a>
+      <a class="nav-bottom" href="">TRAYECTORIA</a>
+      <a class="nav-bottom" href="">RETO 1 MILLÓN</a>
+      <a class="nav-bottom" href="">CONTACTO</a>
 
-    <div id="big-box">
-    <hr>
-    <div id="big-box-main">
-      <!------------- NEWSLETTER ----------------------------------------------->
-      <div id="neo-section" class="main">
+    </nav>
+  </nav>
+  <div id="main-big-box">
+    <hr class="inactive hr-main">
+    <div id="sections-big-box">
+      <!------------- NEO ----------------------------------------------->
+      <div id="neo-section" class="special">
         <div class="container">
           <h2 id="neo-tittle">NEO SOCIAL CLUB</h2>
           <h4>Aqui conocerás a tu proximo socio.</h4>
@@ -73,11 +79,11 @@
       </div>
 
       <!------------- NEWSLETTER ----------------------------------------------->
-      <section id="newsletter-section" class="main">
+      <section id="newsletter-section" class="special">
         <div class="container">
           <h2 id="newsletter-tittle">Newsletter mensual</h2>
-          <form id="neswletter">
-            <label for="email"> Contenido Exclusivo</label>
+          <form id="neswletter-form">
+            <label for="email">Contenido Exclusivo</label>
             <input type="email" id="email" name="email" required value="Correo electrónico">
           </form>
         </div>
@@ -199,7 +205,6 @@
             <li> - Empecé a centrarme en solucionar mi problema con la ansiedad social.</li>
             <li> - Me apunte a la autoescuela para sacarmelo de una vez por todas.</li>
             <li> - Y empecé a aprender programacion de manera autodidacta.</li>
-            <li></li>
           </ul>
 
           Un año mas tarde, conseguí todo lo que me propuse:
@@ -220,37 +225,30 @@
 
 
       <!------------- TRYECTORIA ----------------------------------------------->
-      <section id="trayectoria-section" class="trayectoria main inactive">
+      <section id="trayectoria-section" class="main inactive">
         <div class="container">
           <h3>Trayectoria Profesional</h3>
           <dl>
-            <dt>Auxiliar de tienda en Tako Away</dt>
+            <dt><strong>Auxiliar de tienda</strong> en <a href="">Tako Away</a></dt>
             <dd>11/2016 - 10/2017</dd>
-            <dd>Calle de Fuencarral 87, Madrid (Metro Tribunal).</dd>
 
-            <dt>Técnico de sonido en Escuela Musica Creativa</dt>
+            <dt><strong>Técnico de sonido</strong> en <a href="">Escuela Musica Creativa</a></dt>
             <dd>05/2021 - 10/2021</dd>
-            <dd>Calle de La Palma 35, Madrid (Metro Tribunal).</dd>
 
-            <dt>Comercial de ventas en We Are Sales</dt>
+            <dt><strong>Comercial</strong> de ventas en <a href="">We Are Sales</a></dt>
             <dd>08/2021 - 09/2021</dd>
-            <dd>Calle de San Romualdo 26, Madrid (Metro Suanzes).</dd>
 
-            <dt>Camarero en Restaurante ROKOTO</dt>
+            <dt><strong>Camarero</strong> en <a href="">Restaurante ROKOTO</a></dt>
             <dd>11/2021 - 2/2022</dd>
-            <dd>Calle de Lopez Silva 4, Madrid (Metro La Latina).</dd>
 
-            <dt>Camarero en Restaurante TOTÓ</dt>
+            <dt><strong>Camarero</strong> en <a href="">Restaurante TOTÓ</a></dt>
             <dd>2/2022 - 03/2022</dd>
-            <dd>Paseo de la Castellana 38, Madrid (Metro Rubén Darío)</dd>
 
-            <dt>Camarero en Restaurante A’BARRA (1*Michelín)</dt>
+            <dt><strong>Camarero</strong> en <a href="">Restaurante A’BARRA (1*Michelín)</a></dt>
             <dd>03/2022 - 07/2022</dd>
-            <dd>Paseo del Pinar 15, MAdrid (Metro Gregorio Marañón)</dd>
 
-            <dt>Coctelero en Harvey’s en Cocktail Bar</dt>
+            <dt><strong>Coctelero</strong> en <a href="">Harvey’s Cocktail Bar</a></dt>
             <dd>07/2022 - 06/2023</dd>
-            <dd>Calle Fuencarral 70, Madrid (Metro Tribunal).</dd>
 
           </dl>
         </div>
@@ -258,14 +256,20 @@
 
       <br>
       <!------------- PROYECTOS ----------------------------------------------->
-      <section id="proyectos" class="main inactive">
+      <section id="Formación" class="main inactive">
         <div class="container">
-          <h3>Trayectoria Profesional</h3>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quidem alias fugit harum odio ea consequatur
-          quaerat eligendi similique! Laudantium sunt unde veritatis earum amet consequatur nisi fugit ipsa nostrum!
-          Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quidem alias fugit harum odio ea consequatur
-          quaerat.
+          <h3>Formación</h3>
+          Full Stack Web Developer
+
+          The Bridge - 04/2024
+
+          Técnico de Sonido
+
+          Escuela Música Creativa - 06/2021
+
+          Bartender
+
+          ESCOM - 6/2022
         </div>
       </section>
 
@@ -300,8 +304,11 @@
 
       <br>
     </div>
-    <hr class="inactive">
+    <hr class="inactive hr-main">
   </div>
+
+
+
 
 
   <!-------------- FOOTER ----------------------------------------------->

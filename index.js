@@ -16,3 +16,10 @@ formulario.addEventListener("submit", function (event) {
       `;
 });
 
+
+
+const miHistoria = document.getElementById('')
+const proyectos = document.getElementById('')
+const cv = document.getElementById('')
+const trayectoria = document.getElementById('')
+const contacto = document.getElementById('')

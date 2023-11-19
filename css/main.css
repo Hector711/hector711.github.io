@@ -1,49 +1,87 @@
-@import url(./sec.css);
+@import url(./styles2.css);
+/* @import url(./media.css); */
 
 
-/* ---------- HERRAMIENTAS DE VISUALIZACIÓN ------------------------*/
+:root {
+  --lateral-margins: 7dvw;
+  --lateral-menu: 25dvw;
+}
+
+
+
+/* ============= HERRAMIENTAS DE VISUALIZACIÓN ==========================================*/
+
 body * {
-  /* border: 1px solid rgba(151, 151, 151, 0.824); */
+  /* border: 0.5px solid rgba(151, 151, 151, 0.824); */
   overflow: hidden;
-  
-}
 
-
-/* ------------- GENERAL -------------------------------------------*/
-body {
-  height: 100dvh;
-  width: 98vw;
-  margin: 0;
-  padding: 0;
-  margin-top: 4.8rem;
-  box-sizing: border-box;
-}
-
-.main {
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 2rem;
-  border-radius: 10px;
-
-  z-index: 2;
 }
 
 .inactive {
   /* display: none; */
 }
+
+/* ============= GENERAL ==========================================*/
+body {
+  height: auto;
+  width: 98vw;
+  margin: 0;
+  padding: 0;
+  margin-top: 7rem;
+  box-sizing: border-box;
+
+  position:relative;
+}
+
+.main {
+  padding: 1rem; 
+  margin: 2rem;
+  border-radius: 10px;
+
+}
+
+h2 {
+  margin: 1rem 0.5rem 0.5rem 0.5rem; 
+  text-align: center;
+}
+
+h3 {
+  margin-top:1rem;
+}
+
+section {
+  max-width: 600px;
+
+}
+
 .container {
   padding: 0.5rem;
 }
 
-#big-box {
+#sections-big-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+}
+
+#main-big-box {
   position: relative;
   z-index: 0;
 }
 
+hr {
+  border: 0.5px solid rgb(73, 87, 85);
+  display: none;
+}
 
 
-/* ------------ HEADER ---------------------------------------------*/
+
+
+
+/* ============= HEADER ==========================================*/
 header {
   display: flex;
   flex-direction: column;
@@ -54,11 +92,14 @@ header {
   width: 100%; 
   left: 0; 
   top: 0;
+  
   padding-top: 1.5rem;
   padding-bottom: 0.3rem;
+  padding-left: auto;
+  padding-right: auto;
+  
   box-sizing: border-box;
   position:fixed;
-
   z-index: 1;
 }
 
@@ -66,46 +107,50 @@ header {
   display: flex;
   justify-content: center;
 
-  width: 22rem;
+  width: 80%;
+  /* max-width: 40rem; */
   height: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.4rem;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 
   /* border: 1px solid rgb(255, 255, 255); */
+}
+
+h1 {
+  margin:0;
+  padding: 0.8rem;
+  width: 100%;
+  text-align: center;
 
 }
 
 
-#nav-rrss-header {
+
+/* ============= BIO ==========================================*/
+#bio {
   display: none;
+  margin-top: 0;
+  padding:0;
+  height: 1.7rem;
 }
 
 
 
 
-/* ------------ RRSS ---------------------------------------------*/
-/* #rrss-nav {
-  
-} */
+
+/* ============= RRSS ==========================================*/
+
 
 #nav-rrss {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-evenly;
   align-content: space-evenly;
 
-
-
-  /* margin-top: 4.8rem; */
   padding-top: 1rem;
-  /* border: 0.5px solid rgba(255, 255, 255, 0); */
-
-  z-index: 2;
-  width: 100%;
-  height: auto;
-
+  
+  width:100%;
+ 
   box-sizing: border-box;
 }
 
@@ -116,19 +161,24 @@ header {
   /* para eliminar el subrayado predet de los links */
   text-decoration: none;
 
-  height: 1rem;
-  width: 5rem;
+  height: auto;
   padding: 0.5rem;
   margin-bottom: 1rem ;
-  /* border: 1px solid rgba(106, 105, 105, 0); */
   border-radius: 5px;
+}
+
+img {
+  height: auto;
+  width: auto;
+  max-width: 1.5rem;
+  border: 0px;
 }
 
 
 
 
 
-/* ------------ NAV WEB ---------------------------------------------*/
+/* ============= NAV WEB ==========================================*/
 #nav-web {
   display: flex;
   justify-content: space-evenly;
@@ -155,62 +205,52 @@ header {
 }
 
 
-/* ------------- NEO  ---------------------------------------------*/
+/* ============= NEO  ==========================================*/
+.special {
+  padding: 1rem;
+  max-width: 400px;
+  margin: 2rem;
+  border-radius: 10px;
+
+}
+
+
+
 #neo-section *{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  /* border: 1px solid white; */
-  /* font-family: 'Bajs'; */
-  /* border: 1px solid white; */
+  
 }
 
 
 
-
-
-/* ------------- NEWSLETTER ---------------------------------------------*/
+/* ============= NEWSLETTER ==========================================*/
 #newsletter-section *{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center ;
 
-
-  padding: 0;
-  margin: 0.5rem;
-  /* border: 1px solid rgba(15, 174, 174, 0.123); */
-
-  
-}
-#newsletter-section {
-  /* border: 1px solid rgba(15, 174, 174, 0.123); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-  padding: 1rem;
 }
 
-#newsletter-tittle{
-  display: flex;
-  justify-content: center;
+label {
+  /* padding: 0.5rem; */
+  margin:0.7rem
 }
 
 
-/* ------------- MI HISTORIA ---------------------------------------------*/
-/* #sobre-mi {
-  
-} */
+
+/* ============= MI HISTORIA ==========================================*/
 
 
 
 
 
-/* ------------- FORMULARIO ---------------------------------------------*/
+
+/* ------------- FORMULARIO ==========================================*/
 .enviar {
   margin: 2px;
   width: 100%;
@@ -231,18 +271,22 @@ input, textarea {
 }
 
 
-/* -------------- FOOTER ---------------------------------------------*/
+/* ============= FOOTER ==========================================*/
 footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 
 
-  bottom: 0;
   width: 100%;
+  
   margin: 0;
   padding: 1rem;
-  /* position: fixed; */
+  position: absolute;
+  left:0;
+  right:0;
+  top:100%;
+
 }
 
 
@@ -255,22 +299,39 @@ footer {
 
 
 
-@media (min-width: 800px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) and (max-width: 1800px) {
+  h1 {
+    font-size: 1.5rem;
     
-  body {
-    
-    margin-top: 5rem;
   }
 
 
-
+  body {
+    margin-top: 7rem;
+    padding: 0 var(--lateral-margins) 0 var(--lateral-margins);
+  }
 
   header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:flex-start;
     /* align-items: stretch; */
-    align-content: center;
+    align-items:flex-start;
+    align-content:flex-start;
 
     margin: 0;
     height: 7rem;
@@ -280,100 +341,132 @@ footer {
     padding-top: 1rem;
     padding-bottom: 0.9rem;
     box-sizing: border-box;
+
+    padding-left: var(--lateral-margins);
   
     position:fixed;
     z-index: 1;
+
+
+    display: flex;
+
+    left: 0; 
+    top: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+    box-sizing: border-box;
+    position:fixed;
+
   }
+
+  
+
+
 
   #hector-container { 
     display: flex;
-    width: 30dvw;
+    width: var(--lateral-menu);
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 0;
 
 
   }
 
-  #nav-rrss-header {
+  
+
+
+
+/*   =======================================================================v */
+  .main {
+    width: 40dvw;
+  }
+  
+  #main-big-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: var(--lateral-menu);
+    
+    box-sizing: border-box;
+
+  }
+
+  #sections-big-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50dvw;
+
+  }
+
+
+  /* ==== NAVEGACION ==== */
+  
+  .hr-nav{
+    display: unset;
+    width: 80%;
+  }
+
+  #nav-big-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+    margin:0;
+    
+
+    height: 60dvh;
+    width: var(--lateral-menu);
+
+    position: fixed;
+  }
+
+
+
+  
+
+
+
+  /* ------------- RRSS -----------------------------------------------*/
+  #nav-rrss {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     align-content: center;
+    align-items: center;
 
-    width: 50dvw;
-    margin:auto;
-    height: 4rem;
+    margin: 0;
+    padding: 0;
+    height: 10dvh;
+    width: 90%;
+
 
   }
+    
+
   .rrss-links {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     align-content: center;
 
     
     margin: 0;
     height: 1rem;
-    width: 5rem;
-  }
-
-  #nav-rrss {
-    display: none;
-  }
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  .main {
-    width: 40dvw;
-  }
-  
-  #big-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 20dvw;
-    /* width: 100dvw;
-    height: 100dvh; */
-    box-sizing: border-box;
-
-
   }
   
   #nav-web {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-content: start;
-
-
-    margin: 3rem;
+    justify-content: center;
+    align-items: center;
     height: 40dvh;
     width: 20dvw;
-
-    position: fixed;
   }
 
-  
-  
-  
   .nav-bottom {
     display: flex;
     justify-content: center;
@@ -392,22 +485,46 @@ footer {
 
 
 
+ 
 
 
 
 
 
 
-  #big-box-main {
-    width: 50dvw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+
+}
+
+
+
+/* ===================================== MEDIA QUERIE =======================================================================v */
+@media (min-width: 1110px) {
+    
+  h1 {
+    font-size: 1.8rem;
   }
-  hr {
-    display: unset;
-    margin: 3rem;
+
+
+  /* ------------- BIO -----------------------------------------------*/
+  #bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
   
+  hr {
+    display: unset;
+  }
+  
+  .hr-bio {
+    height: 1rem;
+    margin: 0.5rem;
+
+  }
+
+  .hr-main {
+    margin: 1rem;
+
+  }
 }

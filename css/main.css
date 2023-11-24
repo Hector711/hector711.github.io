@@ -3,8 +3,9 @@
 
 
 :root {
-  --lateral-margins: 12dvw;
-  --w-main-menu: 22dvw;
+  --lateral-margins-XL: 12dvw;
+  --lateral-margins-S: 2dvw;
+  --w-main-menu: 30dvw;
   --max-w-main-menu: 270px;
   --w-lateral-menu: 12dvw;
   --header-height: 6rem;
@@ -13,6 +14,13 @@
 
 
 /* ============= HERRAMIENTAS DE VISUALIZACIÓN ==========================================*/
+
+html {
+  margin:0;
+  padding:0;
+  left:0;
+  right:0
+}
 
 body * {
   /* border: 0.5px solid rgba(151, 151, 151, 0.824); */
@@ -27,13 +35,14 @@ body * {
 /* ============= GENERAL ==========================================*/
 body {
   height: auto;
-  width: 98vw;
+  width: 95svw;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   margin-top: var(--header-height);
   box-sizing: border-box;
 
   position:relative;
+ 
 }
 
 .main {
@@ -50,6 +59,14 @@ h2 {
 
 h3 {
   margin-top:1rem;
+}
+
+h4, h1, h2, h3{
+  text-wrap: balance
+}
+
+p {
+  text-wrap: pretty;
 }
 
 section {
@@ -70,9 +87,10 @@ section {
   
 }
 
-#main-big-box {
+#body-grand-box {
   position: relative;
   z-index: 0;
+  width: auto;
 }
 
 hr {
@@ -312,7 +330,7 @@ footer {
 
 
 
-@media (min-width: 700px) and (max-width: 1800px) {
+@media (min-width: 650px) and (max-width: 2000px) {
   h1 {
     font-size: 1.5rem;
     
@@ -321,7 +339,7 @@ footer {
 
   body {
     margin-top: 7rem;
-    padding: 0 var(--lateral-margins) 0 var(--lateral-margins);
+    padding: 0 var(--lateral-margins-S) 0 var(--lateral-margins-S);
   }
 
   header {
@@ -341,7 +359,7 @@ footer {
     padding-bottom: 0.9rem;
     box-sizing: border-box;
 
-    padding-left: var(--lateral-margins);
+    padding-left: var(--lateral-margins-S);
   
     position:fixed;
     z-index: 1;
@@ -381,15 +399,13 @@ footer {
     width: 40dvw;
   }
   
-  #main-big-box {
+  #body-grand-box{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-left: var(--w-main-menu);
-    /* margin-right: var(--w-lateral-menu); */
     
     box-sizing: border-box;
-
   }
 
   #sections-big-box{
@@ -398,7 +414,7 @@ footer {
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 50dvw;
+    width: 55dvw;
 
   }
 
@@ -424,7 +440,6 @@ footer {
 
     height: 60dvh;
     width: var(--w-main-menu);
-    /* max-width: var(--max-w-main-menu); */
 
     position: fixed;
   }
@@ -490,6 +505,21 @@ footer {
   
     
   }
+  hr {
+    display: unset;
+  }
+  
+  .hr-bio {
+    height: 1rem;
+    margin: 0.4rem;
+
+  }
+
+  .hr-main {
+    /* margin: 0.3rem; */
+    margin: 0 0 0 0;
+    
+  }
 
 }
 
@@ -497,10 +527,16 @@ footer {
 
 
 /* ===================================== MEDIA QUERIE =======================================================================v */
-@media (min-width: 1136px) {
+@media (min-width: 1000px) {
     
   h1 {
     font-size: 1.8rem;
+  }
+
+
+  body {
+    margin-top: 7rem;
+    padding: 0 var(--lateral-margins-S) 0 var(--lateral-margins-S);
   }
 
 
@@ -518,20 +554,7 @@ footer {
 
   }
   
-  hr {
-    display: unset;
-  }
-  
-  .hr-bio {
-    height: 1rem;
-    margin: 0.4rem;
-
-  }
-
-  .hr-main {
-    margin: 1.5rem;
-
-  }
+ 
 
 
 
